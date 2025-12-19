@@ -1,11 +1,13 @@
 ## STM32 学习记录
 
 芯片:
-    STM32F103C8T6
+* STM32F103C8T6
+    
 IDE:
-    STM32CubeIDE version 1.19.0
+* STM32CubeIDE version 1.19.0
+
 OS:
-    mac OS tahoe 26
+* mac OS tahoe 26
 
 
 ```plainText
