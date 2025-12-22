@@ -76,7 +76,7 @@ void gpio_reset(GPIO_TypeDef *gpio, uint16_t pin) {
     gpio->BSRR = (1 << (pin + 16));
 }
 
-#ifdef USE_HARDWARE_SPI
+#if USE_HARDWARE_SPI
 // 硬件SPI协议发送byte
 void spi_send_byte(uint8_t byte) {
     while (!(SPI1->SR & SPI_SR_TXE)); // 等待 TX empty
@@ -362,7 +362,7 @@ void oled_init() {
     oled_clear();
 }
 
-#ifdef USE_HARDWARE_SPI
+#if USE_HARDWARE_SPI
 // MCU init
 void mcu_init() {
     // Enable clocks

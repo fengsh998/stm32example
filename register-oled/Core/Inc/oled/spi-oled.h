@@ -20,7 +20,7 @@
 #include "stm32f103xb.h"
 #include "clock/systick.h"
 
-#ifdef USE_HARDWARE_SPI
+#if USE_HARDWARE_SPI
 // 硬件 SPI协议 Pin definitions
 #define OLED_CS_GPIO GPIOA
 #define OLED_CS_PIN 4
